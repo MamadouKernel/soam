@@ -1,0 +1,19 @@
+# ErrorDocument 404 /controllers/404.php
+# ErrorDocument 403 /404.php
+<IfModule mod_rewrite.c>
+ # Rewrite personaliser
+
+    Options +FollowSymlinks
+    RewriteEngine on
+
+    # redirect
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^accueil$ index.php$1 [L]
+    RewriteRule ^apropos$ controllers/apropos.php$1 [L]
+    RewriteRule ^contacts$ controllers/contact.php$1 [L]
+    RewriteRule ^objectifs$ controllers/objectif.php$1 [L]
+    RewriteRule ^galeries$ controllers/galerie.php$1 [L]
+
+
+</IfModule>

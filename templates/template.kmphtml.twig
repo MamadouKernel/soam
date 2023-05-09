@@ -1,0 +1,333 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="public/assets/img/logo.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="public/assets/css/slicknav.css">
+    <link rel="stylesheet" href="public/assets/css/flaticon.css">
+    <link rel="stylesheet" href="public/assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="public/assets/css/gijgo.css">
+    <link rel="stylesheet" href="public/assets/css/animate.min.css">
+    <link rel="stylesheet" href="public/assets/css/animated-headline.css">
+    <link rel="stylesheet" href="public/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="public/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="public/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="public/assets/css/slick.css">
+    <link rel="stylesheet" href="public/assets/css/nice-select.css">
+    <link rel="stylesheet" href="public/assets/css/style.css">
+</head>
+
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="public/assets/img/logo/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo" style="font-size: 30px; font-weight:bold">
+                                    <a href="accueil"><img src="public/assets/img/logo/logo.png" alt=""></a>
+                                    SOAM
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="accueil">Accueil</a></li>
+                                                <li><a href="apropos">A propos</a></li>
+                                                <li><a href="objectifs">Objectifs</a></li>
+                                               <!-- <li><a href="galeries">Galeries</a></li>-->
+                                                <li><a href="contacts">Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    {% block contenu %}
+    {% endblock %}
+    <!-- The Modal -->
+    <form class="form-contact contact_form" method="post">
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title" style="color: green; font-weight: bold; font-size: 30px"><u>Soutenir l'Association</u></h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="container">
+                            {# <div class="row">
+                                <div class="input-group mb-3  checkbox_switch_container">
+                                    <label for="checkbox1">Don en numeraire</label>
+                                    <input type="checkbox" id="checkbox1"/>
+                                    <label for="checkbox2">Don en nature</label>
+                                    <input type="checkbox" id="checkbox2"/>
+                                </div>
+                            </div> #}
+                            <div class="selects_containers">
+                                {# <div class="row" id="select1">
+                                    <div class="col-md-12">
+                                        <div class="input-group mb-3">
+                                            <textarea class="form-control" name="message" pattern="[a-zA-Z0-9]+" required="required" placeholder="Entrer votre message svp!" aria-label="With textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </div> #}
+                                <div class="row" id="select2">
+                                    <div class="col-md-12">
+                                        <div class="input-group mb-3">
+                                            <input type="text" pattern="[0-9]+" required="required" class="form-control form-control-lg" name="somme" id="argent" aria-label="typedon" placeholder="Entrer le montant de votre don">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <input type="text" required="required" pattern="[a-zA-Z]+" class="form-control form-control-lg" name="nom" id="name" aria-label="nom" placeholder="Entrer votre nom svp!">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control form-control-lg" pattern="[a-zA-Z]+" required="required"  name="prenom" id="prenom" aria-label="prenom" placeholder="Entrer votre Prenom svp!">
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <input type="tel" pattern="[0-9]+" minlength="8" maxlength="10" class="form-control form-control-lg" required="required" id="tel" name="tel" aria-label="tel" placeholder="Entrer votre téléphone">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group mb-3">
+                                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" class="form-control form-control-lg" required="required" name="mail" id="mail" aria-label="email" placeholder="Entre votre adresse mail">
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control form-control-lg" required="required" pattern="[a-zA-z0-9]+" name="residence" id="residence" aria-label="residence" placeholder="Entrer votre Lieu de résidence svp!">
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group mb-3">
+                                        <textarea class="form-control" name="message" pattern="[a-zA-Z0-9]+" required="required" placeholder="Entrer votre message svp!" aria-label="With textarea"></textarea>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="modal-footer">
+                                <button type="submit" name="envoyer" class="btn btn-danger">Je fais un soutien</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal footer -->
+
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <div class="footer-wrapper">
+           <!-- Footer Start-->
+           <div class="footer-area footer-padding">
+               <div class="container ">
+                   <div class="row justify-content-between">
+                       <div class="col-xl-4 col-lg-3 col-md-8 col-sm-8">
+                           <div class="single-footer-caption mb-50">
+                               <div class="single-footer-caption mb-30">
+                                   <!-- logo -->
+                                   <div class="footer-logo mb-35" style="font-weight: bold; font-size: 30px">
+                                       <a href="index.html"><img src="public/assets/img/logo/logo_footer.svg" width="80px" alt=""></a>
+                                       SOAM
+                                   </div>
+                                   <div class="footer-tittle">
+                                       <div class="footer-pera">
+                                           <p>Solidarité Action dans Le Monde en abrégé SOAM, se veut une association à vocation internationale qui a été créée pour répondre aux aspirations de ses membres qui souscrivent à la déclaration du millénaire adopté par la résolution 55/2 des nations Unies en septembre 2000. </p>
+                                       </div>
+                                   </div>
+                                   <!-- social -->
+                                   <div class="footer-social">
+                                       <a href="#"><i class="fab fa-twitter"></i></a>
+                                       <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                       <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4">
+                           <div class="single-footer-caption mb-50">
+                               <div class="footer-tittle">
+                                   <h4><u>Liens Utiles</u></h4>
+                                   <ul>
+                                    <li><i class="fa fa-hand-point-right"></i> <a href="apropos">A propos</a></li>
+                                    <li><i class="fa fa-hand-point-right"></i> <a href="objectifs">Objectifs</a></li>
+                                    <!--<li><i class="fa fa-hand-point-right"></i> <a href="galeries">Galeries</a></li>-->
+                                    <li><i class="fa fa-hand-point-right"></i> <a href="contacts">Contact</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-4">
+                           <div class="single-footer-caption mb-50">
+                               <div class="footer-tittle">
+                                   <h4><u>Nos Contacts</u></h4>
+                                   <ul>
+                                       <li><i class="ti-email"></i> <a href="#">contact@soam.com</a></li>
+                                       <li><i class="ti-home"></i> <a href="#">Siége social: Ouagadougou, Burkina Faso<br>Bureau Exécutil: Bobodioulasso, Burkina Faso<br>Représentation Européenne: Nancy France</a></li>
+                                       <li><i class="ti-tablet"></i> <a href="#">(+226) 70 354 038 / 70 236 550<br>(+33) 783 021 577</a></li>
+                                       <li><i class="fa fa-certificate" style="color: red;"></i> <a href="#">N<sup>o</sup>récépissé : N000001395501</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- footer-bottom area -->
+           <div class="footer-bottom-area">
+               <div class="container">
+                   <div class="footer-border">
+                       <div class="row d-flex align-items-center">
+                           <div class="col-xl-12 ">
+                               <div class="footer-copy-right text-center">
+                                   <p>
+                                        Droits d'auteur &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés | Solidarité Action dans Le Monde (SOAM).
+                                    </p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Footer End-->
+          </div>
+      </footer>
+      <!-- Scroll Up -->
+      <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+    <script src="public/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="public/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="public/assets/js/popper.min.js"></script>
+    <script src="public/assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="public/assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="public/assets/js/owl.carousel.min.js"></script>
+    <script src="public/assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="public/assets/js/wow.min.js"></script>
+    <script src="public/assets/js/animated.headline.js"></script>
+    <script src="public/assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="public/assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="public/assets/js/jquery.nice-select.min.js"></script>
+    <script src="public/assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="public/assets/js/jquery.barfiller.js"></script>
+    <!--formulaire-->
+    <script src>
+//formulaire
+const checkbox_switch_container = document.querySelector('.checkbox_switch_container')
+const selects_containers = document.querySelector('.selects_containers')
+
+const checkbox1 = checkbox_switch_container.querySelector('#checkbox1')
+const checkbox2 = checkbox_switch_container.querySelector('#checkbox2')
+
+const select1 = selects_containers.querySelector('#select1')
+const select2 = selects_containers.querySelector('#select2')
+
+
+select1.style.display ="none"
+
+checkbox1.addEventListener('change', (e) => {
+    checkbox2.checked = false
+  if(e.currentTarget.checked){
+    select2.style.display ="none"
+    select1.style.display ="block"
+  }else{
+    select2.style.display ="block"
+    select1.style.display ="none"
+  }
+
+})
+
+
+checkbox2.addEventListener('change', (e) => {
+    checkbox1.checked = false
+    if(e.currentTarget.checked){
+        select2.style.display ="block"
+        select1.style.display ="none"
+      }else{
+        select2.style.display ="npne"
+        select1.style.display ="block"
+      }
+})
+    </script>
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="public/assets/js/jquery.counterup.min.js"></script>
+    <script src="public/assets/js/waypoints.min.js"></script>
+    <script src="public/assets/js/jquery.countdown.min.js"></script>
+    <script src="public/assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="public/assets/js/contact.js"></script>
+    <script src="public/assets/js/jquery.form.js"></script>
+    <script src="public/assets/js/jquery.validate.min.js"></script>
+    <script src="public/assets/js/mail-script.js"></script>
+    <script src="public/assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="public/assets/js/plugins.js"></script>
+    <script src="public/assets/js/main.js"></script>
+</body>
+</html>

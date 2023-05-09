@@ -1,0 +1,120 @@
+{% extends 'template.kmphtml.twig' %}
+{% block title %} Contacts | SOAM {% endblock %}
+{% block contenu %}
+    <main>
+         <!--? Hero Start -->
+         <div class="slider-area2">
+            <div class="slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap hero-cap2 pt-70">
+                                <h2>Nos Contacts</h2>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="accueil">Accueil</a></li>
+                                        <li class="breadcrumb-item"><a href="contacts">Contacts</a></li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+        <hr>
+        <!--?  Contact Area start  -->
+        <div class="container">
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.156952556129!2d-4.2742688!3d11.176012499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe34fafffd390bdb%3A0x140883a486a86469!2ssecteur%204%203%2C%20Saint%20Etienne%2C%20Bobo-Dioulasso%2C%20Burkina%20Faso!5e0!3m2!1sfr!2sfr!4v1660038866001!5m2!1sfr!2sfr" width="1200" height="900" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="contact-title"><u>Notre Formulaire de Contact</u></h2>
+                </div>
+                <div class="col-lg-8">
+                    <form class="form-contact contact_form" method="post" id="contactForm" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Entrer votre message'" placeholder=" Entrer le Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Entrer votre nom et prénom'" placeholder="Entrer votre nom">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Entrer votre addresse email'" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Entrer le Sujet'" placeholder="Entrer l'objet">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="button button-contactForm boxed-btn">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-home" style="color: black;"></i></span>
+                        <div class="media-body">
+                            <h4>Siège social: Ouagadougou, Burkina Faso<br>Bureau Exécutif: Bobodioulasso, Burkina Faso<br>Représentation Européenne: Nancy France</h4>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-tablet" style="color: green;"></i></span>
+                        <div class="media-body">
+                            <h3>+226 70 354 038/ 70 236 550<br>(+33) 783 021 577</h3>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-email" style="color: blue;"></i></span>
+                        <div class="media-body">
+                            <h3>contact@soam.com</h3>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="fa fa-certificate" style="color: red;"></i></span>
+                        <div class="media-body">
+                            <h3>N<sup>o</sup> récépissé: N000001395501</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--? Our Adhesion -->
+        <div class="whole-wrap">
+            <div class="container box_1170">
+                <div class="section-top-border">
+                    <h3 class="mb-30 justify-content-center" style="font-size: 30px; font-weight:bold"><u>Condition d’Adhésion</u></h3>
+                    <div class="row">
+                        <div class="col-md-8 mt-sm-20">
+                            <p>
+                                <i class="fa fa-hand-point-right"></i> Personne physique,<br><i class="fa fa-hand-point-right"></i> Personne morale & de bonne moralité,<br><i class="fa fa-hand-point-right"></i> sans distinction de dénomination,de genre,
+                             d’ethnie,<br><i class="fa fa-hand-point-right"></i> Une Personne de nationalité ou de race,<br><i class="fa fa-hand-point-right"></i> prête à se conformer aux textes régissant la structure.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="public/assets/img/elements/d.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Our Adhesion End-->
+        <hr>
+    </main>
+{% endblock %}
